@@ -11,3 +11,15 @@
       copy:
         src: /home/exploit/clef 
         dest: /tmp/
+                
+    - name: Insert la clé ssh
+      lineinfile:
+        path: /home/exploit/.ssh/authorized_keys
+        line:     - name: Insert la clé ssh
+      lineinfile:
+        path: /home/jenkins/.ssh/authorized_keys
+        line: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCTFj6Xu46XXw1k3YHN+5cD7ziqhqex6w4VC3Y0DywAnOClK5pve6RjUIeYZ0cn2CpJ117aae2KI4nhEaeSBMRMqc7h1nTSTWR8tnljYQ87fZIiR1RXYu8Z+X4xg904xOm/ZWsR9zsj686kWpe2pyyQW/kX05FrUpOm284aVDBY/wYFm57NjUV24tre0it8nzau05fDjuJ9X0wrfL46vyfhHq4bIJGAKSdD0nLzU6XAxbCQ4SOqSUSTRLsXwbBLCIIvAJTu1jGID4AiXxC4fuDkIq8aSC4olt5muoA0O2nOP8CFW0KY1PPdZx+6PBO7JIw58HW2xoGWkAGvnGkzlrpV jenkins@lxjenkins01
+        create: yes
+        mode: '0600'
+        owner: 'exploit'
+        group: 'exploit'
