@@ -1,0 +1,13 @@
+- name: test 
+  hosts: all
+  become_flags: -H
+  remote_user: exploit
+  gather_facts: no
+  become: yes
+  become_user: root
+  tasks:
+
+    - name: Copy rpm file to server
+      copy:
+        src: /home/exploit/clef 
+        dest: /tmp/
