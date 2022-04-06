@@ -7,7 +7,7 @@
   become_user: root
   tasks:
 
-    - name: Copy rpm file to server
+    - name: Copy rpm file to server22222
       copy:
         src: /home/exploit/clef 
         dest: /tmp/
@@ -20,4 +20,5 @@
         mode: '0600'
         owner: 'exploit'
         group: 'exploit'
+        
 
